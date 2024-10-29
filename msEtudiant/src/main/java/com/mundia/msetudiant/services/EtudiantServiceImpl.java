@@ -71,7 +71,7 @@ public class EtudiantServiceImpl implements EtudiantService {
     public EtudiantDTO getEtudiantAvecFiliere(Long id) {
         Etudiant etudiant = getEtudiant(id);
         FiliereDTO filiereDTO = webClient.get()
-                .uri("http://localhost:8081/api/filiere/"+etudiant.getIdFiliere())
+                .uri("http://MSFILIERE/api/filiere/"+etudiant.getIdFiliere())
                 .retrieve()
                 .bodyToMono(FiliereDTO.class)
                 .block();
