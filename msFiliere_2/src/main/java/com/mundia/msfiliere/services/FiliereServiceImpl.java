@@ -63,7 +63,7 @@ public class FiliereServiceImpl implements FiliereService{
     public FiliereDTO getFiliereDTOById(Long id) {
         Filiere filiere = getFiliereById(id);
         EtudiantDTO[] etudiantDTOS = webClient.get()
-                .uri("http://localhost:8080/api/etudiant/etudiantbyidfiliere/"+id)
+                .uri("http://MSETUDIANT/api/etudiant/etudiantbyidfiliere/"+id)
                 .retrieve()
                 .bodyToMono(EtudiantDTO[].class)
                 .share()
