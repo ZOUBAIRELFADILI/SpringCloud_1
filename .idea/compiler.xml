@@ -6,14 +6,16 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="api-gateway" />
         <module name="msEtudiant" />
         <module name="msFiliere (2)" />
-        <module name="Eureka" />
         <module name="msFiliere (1)" />
+        <module name="api-gateway" />
+        <module name="tp1sec" />
+        <module name="Eureka" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="auth-service" target="17" />
       <module name="msFiliere" target="17" />
     </bytecodeTargetLevel>
   </component>
@@ -21,10 +23,12 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="Eureka" options="-parameters" />
       <module name="api-gateway" options="-parameters" />
+      <module name="auth-service" options="-parameters" />
       <module name="msEtudiant" options="-parameters" />
       <module name="msFiliere" options="-parameters" />
       <module name="msFiliere (1)" options="-parameters" />
       <module name="msFiliere (2)" options="-parameters" />
+      <module name="tp1sec" options="-parameters" />
     </option>
   </component>
 </project>
